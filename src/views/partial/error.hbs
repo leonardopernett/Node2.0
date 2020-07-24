@@ -1,0 +1,23 @@
+{{#if error}}
+
+  <div class="container mt-2">
+      <div class="row">
+          <div class="col-md-3 ml-auto">
+              <div class="alert alert-danger" id="alert">
+                 <p class="text-center"> <strong>{{error}}</strong></p>
+            </div>
+          </div>
+      </div>
+  </div>
+  
+{{/if }}
+
+<script>
+   setTimeout(()=>{
+      change()
+   },3000)
+
+   function change(){
+       document.getElementById('alert').classList.add('hide')
+   }
+</script>
